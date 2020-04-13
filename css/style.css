@@ -15,16 +15,18 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Playfair Display", serif;
   color: var(--main-black);
 }
 
+/* Navbar */
 #navbar {
   display: flex;
   position: sticky;
   padding: 1.5rem 1.5rem;
   justify-content: space-between;
   background-color: var(--main-snow);
+  box-shadow: 0px 2px 14px 0px #b7b7b7;
 }
 
 #navbar ul {
@@ -52,4 +54,74 @@ body {
 
 .text-primary {
   color: var(--main-salomon);
+}
+
+/* Showcase */
+.showcase-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container {
+  border-right: 4px solid var(--main-snow);
+  background: url("../img/img-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 40%;
+}
+
+.right-container {
+  border-left: 4px solid var(--main-snow);
+  background: url("../img/img-8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 60%;
+}
+
+.card-showcase {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-snow);
+  position: relative;
+  margin: auto;
+  padding: 1rem 1rem;
+  /* border: 1px solid grey; */
+  text-align: center;
+}
+
+.left-container > .card-showcase {
+  top: 70%;
+  width: 70%;
+}
+
+.right-container > .card-showcase {
+  top: 70%;
+  width: 70%;
+}
+
+.card-showcase p {
+  font-size: small;
+  font-style: italic;
+}
+
+.card-showcase a {
+  text-decoration: none;
+  font-style: italic;
+  color: var(--main-black);
+  background-color: var(--main-apricot);
+  padding: 0.5rem 0.5rem;
+  margin-top: 20px;
+}
+
+.card-hover {
+  transition: ease-in-out 0.2s;
+}
+
+.card-hover:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 2px #fff;
 }
