@@ -34,6 +34,7 @@ body {
   justify-content: space-between;
   background-color: var(--main-snow);
   box-shadow: 0px 2px 14px 0px #b7b7b7;
+  z-index: 1;
 }
 
 #navbar ul {
@@ -142,4 +143,42 @@ body {
 .card-hover:hover {
   background-color: #fff;
   box-shadow: 0px 0px 0px 2px #fff;
+}
+
+/* Section Articles */
+
+/* #section-article {
+  max-width: 800px;
+} */
+
+#section-article .container-article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 1px;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 1100px;
+}
+
+.img-article {
+  width: 100%;
+}
+
+.category-tips {
+  background: var(--main-apricot);
+  width: fit-content;
+  padding: 0.5rem;
 }
