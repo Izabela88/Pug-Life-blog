@@ -30,6 +30,7 @@ body {
   grid-template-columns: 4fr 5fr 4fr;
   align-items: center;
   position: sticky;
+  top: 0;
   padding: 1.5rem 1.5rem;
   justify-content: space-between;
   background-color: var(--main-snow);
@@ -46,13 +47,15 @@ body {
 #navbar ul li a {
   text-decoration: none;
   font-weight: bold;
-  padding: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 1rem;
+  margin: 1rem;
   color: var(--main-black);
 }
 
 #navbar ul li a:hover {
-  background: var(--main-apricot);
-  border-radius: 5%;
+  color: var(--main-salomon);
 }
 
 #navbar .social {
@@ -62,6 +65,10 @@ body {
 #navbar .social i {
   color: var(--main-salomon);
   margin-right: 2rem;
+}
+
+#navbar .social i:hover {
+  color: var(--main-pink);
 }
 
 .nav-logo {
@@ -76,6 +83,11 @@ body {
 }
 
 /* Showcase */
+
+#showcase {
+  background-color: var(--main-snow);
+}
+
 .showcase-container {
   display: flex;
   flex-direction: row;
@@ -147,6 +159,10 @@ body {
 
 /* Section Articles */
 
+#section-articles {
+  background-color: var(--main-snow);
+}
+
 .container {
   padding: 2rem 2rem;
   max-width: 1100px;
@@ -193,4 +209,47 @@ body {
 
 .container-card a:hover {
   color: var(--main-pink);
+}
+
+/* Footer */
+
+#main-footer {
+  background-color: var(--main-pink);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 1100px;
+  grid-gap: 1.5rem;
+  padding: 2rem;
+}
+
+.footer-container ul {
+  list-style-type: none;
+  color: var(--main-black);
+}
+
+.footer-container > *:last-child {
+  grid-column: 1 / span 3;
+  text-align: center;
+}
+
+.footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-container input[type="submit"] {
+  width: 90%;
+}
+
+.btn {
+  border: 1px solid black;
+  background-color: var(--main-grey);
+  color: var(--main-black);
+  padding: 0.5rem 1.5rem;
 }
