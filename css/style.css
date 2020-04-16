@@ -297,6 +297,11 @@ body {
 #post-section {
   background-color: var(--main-snow);
 }
+.container-post {
+  max-width: 1400px;
+  margin: auto;
+  align-items: center;
+}
 
 .back-btn {
   padding: 1rem 1rem;
@@ -321,7 +326,7 @@ body {
 .box-avatar {
   display: flex;
   padding: 1rem;
-  border: 1px solid var(--main-salomon);
+  border-bottom: 1px solid var(--main-salomon);
 }
 
 .avatar {
