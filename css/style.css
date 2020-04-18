@@ -148,16 +148,16 @@ ul {
 
 .left-container > .card-showcase {
   top: 70%;
-  width: 70%;
+  width: 80%;
 }
 
 .right-container > .card-showcase {
   top: 70%;
-  width: 70%;
+  width: 80%;
 }
 
 .card-showcase p {
-  font-size: small;
+  font-size: 0.75rem;
   font-style: italic;
 }
 
@@ -189,6 +189,7 @@ ul {
 .container-articles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   grid-gap: 15px;
   padding: 1rem 1rem;
 }
@@ -203,7 +204,7 @@ ul {
 
 .container-card p {
   font-style: italic;
-  font-size: small;
+  font-size: 0.75rem;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
 }
@@ -254,16 +255,16 @@ ul {
 }
 
 .post-image {
-  padding: 1rem 1rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
+  padding: 1rem 1rem;
 }
 
 .aside-container {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 5px;
-  padding: 0 1rem;
+  margin-left: 5px;
   line-height: 2rem;
 }
 
@@ -292,6 +293,10 @@ ul {
 
 #main-footer {
   border-top: 1px solid var(--main-pink);
+}
+
+.social-footer {
+  display: none;
 }
 
 .footer-container {
