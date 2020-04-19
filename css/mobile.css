@@ -1,6 +1,5 @@
 @media only screen and (max-width: 768px) {
   /* Navbar */
-
   #navbar {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -32,26 +31,15 @@
 
   .card-showcase {
     height: 115px;
-    font-size: 70%;
+    font-size: 80%;
   }
 
   .card-showcase a {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 5px;
   }
 
-  .left-container > .card-showcase {
-    top: 60%;
-    margin: auto;
-  }
-
-  .right-container > .card-showcase {
-    top: 60%;
-    margin: auto;
-  }
-
   /* Section Articles */
-
   .container-articles {
     grid-template-columns: 1fr;
     padding: 0 4rem;
@@ -94,7 +82,7 @@
     justify-self: center;
   }
 
-  .footer-container > *:last-child {
+  .footer-copyright {
     border: none;
   }
 
@@ -110,7 +98,9 @@
 
 @media only screen and (max-width: 600px) {
   /* Navbar */
-  #navbar {
+  #navbar,
+  .showcase-container,
+  .post-image {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -126,17 +116,14 @@
     width: 40px;
   }
 
-  /* Showcase */
-  .showcase-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
-
   .card-showcase {
     font-size: 60%;
     padding: 0.75rem 0.75rem;
-    height: 100px;
+    height: 80px;
+  }
+
+  .card-showcase p {
+    font-size: 90%;
   }
 
   .card-showcase a {
@@ -145,18 +132,16 @@
   }
 
   .right-container > .card-showcase {
-    top: 60%;
     width: 70%;
   }
 
   .left-container > .card-showcase {
-    top: 60%;
     width: 70%;
   }
 
   /* Section Articles */
-
-  .container-articles {
+  .container-articles,
+  .container-post {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 0;
   }
@@ -175,18 +160,8 @@
 
   /* Section Post */
 
-  .container-post {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 0;
-  }
-
   .box-avatar {
     font-size: 70%;
-  }
-
-  .post-image {
-    grid-template-columns: 1fr;
-    justify-content: center;
   }
 
   .post-image img {
@@ -208,7 +183,6 @@
   }
 
   /* Footer */
-
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -222,7 +196,7 @@
     justify-self: center;
   }
 
-  .footer-container > *:last-child {
+  .footer-copyright {
     border: none;
   }
 }
