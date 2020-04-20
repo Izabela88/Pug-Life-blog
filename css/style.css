@@ -50,7 +50,7 @@ p {
 .category {
   margin-top: 0.75rem;
   border: 1px solid var(--main-salomon);
-  width: fit-content;
+  width: min-content;
   padding: 0.5rem;
   letter-spacing: 1px;
   font-weight: bold;
@@ -144,16 +144,16 @@ p {
 
 .left-container > .card-showcase {
   top: 70%;
-  width: 80%;
+  width: 90%;
 }
 
 .right-container > .card-showcase {
   top: 70%;
-  width: 80%;
+  width: 90%;
 }
 
 .card-showcase p {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
 
