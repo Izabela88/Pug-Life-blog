@@ -344,9 +344,10 @@ p {
   border-top: 1px solid var(--main-salomon);
 }
 
-.footer-subscribe input[type="email"] {
+.footer-subscribe input[type="email"],
+.footer-subscribe input[type="text"] {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.3rem;
   margin-bottom: 0.5rem;
 }
 
